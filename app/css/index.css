@@ -1,0 +1,217 @@
+/* === FONTS === */
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/poppins-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/poppins-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/poppins-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/poppins-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/poppins-v15-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/poppins-v15-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/poppins-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/poppins-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/poppins-v15-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/poppins-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/poppins-v15-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+/* === UTILS === */
+
+.sv-ph-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.sv-pb-12 {
+  padding-bottom: 16px;
+}
+
+.sv-pv-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sv-pt-32 {
+  padding-top: 32px;
+}
+
+.sv-pb-32 {
+  padding-bottom: 32px;
+}
+
+.sv-pv-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.sv-ml-auto {
+  margin-left: auto;
+}
+
+.sv-mt-8 {
+  margin-top: 8px;
+}
+
+.sv-mt-24 {
+  margin-top: 24px;
+}
+
+.sv-w-full {
+  width: 100%;
+}
+
+.sv-font-t1-24 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.sv-font-t1-14 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.sv-font-t1-14-b {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.sv-font-clr-g1 {
+  color: #000000;
+}
+
+.sv-clr-g1 {
+  background-color: #000000;
+}
+
+.sv-font-clr-g2 {
+  color: #5F6374;
+}
+
+.sv-clr-g2 {
+  background-color: #5F6374;
+}
+
+.sv-font-clr-g3 {
+  color: #EAEBF1;
+}
+
+.sv-clr-g3 {
+  background-color: #EAEBF1;
+}
+
+.sv-font-clr-g4 {
+  color: #D4D7E2;
+}
+
+.sv-clr-g4 {
+  background-color: #D4D7E2;
+}
+
+.sv-font-clr-g5 {
+  color: #AFB4CA;
+}
+
+.sv-clr-g5 {
+  background-color: #AFB4CA;
+}
+
+/* === COMMON === */
+
+:root, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sv-container,
+.sv-container_center {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 720px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.sv-container_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === COMPONENTS === */
+
+.sv-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
+}
+
+.sv-btn-v1,
+.sv-btn-v2 {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #5F6374;
+  background-color: #EAEBF1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .3s;
+  transition-property: background-color;
+}
+
+.sv-btn-v1 {
+  padding: 16px 12px;
+  border-radius: 12px;
+}
+
+.sv-btn-v2 {
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.sv-btn-v1:hover,
+.sv-btn-v1:focus,
+.sv-btn-v2:hover,
+.sv-btn-v2:focus {
+  background-color: #D4D7E2;
+}
+
+.sv-btn-v1:active,
+.sv-btn-v2:active {
+  background-color: #AFB4CA;
+}
+
+.sv-btn-v1[disabled],
+.sv-btn-v2[disabled] {
+  background-color: red;
+}
