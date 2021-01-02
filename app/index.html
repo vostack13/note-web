@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Note</title>
   <link rel="stylesheet" href="./css/index.css">
+  <script defer src="./js/utils.js"></script>
+  <script defer src="./js/api.js"></script>
+  <script defer src="./js/index.js"></script>
 </head>
 
-<body>
+<body class="sv-clr-g6">
   <div class="wrapper sv-pb-32">
-    <header class="sv-container sv-pt-32 sv-pb-12 sv-font-t1-24">Notes</header>
+    <header class="sv-container sv-pt-8 sv-pb-8 sv-mt-24 sv-font-t1-24-b">Notes</header>
 
-    <ul id='task-list' class="sv-container">
-      <li class="sv-card sv-pv-16 sv-mt-24 sv-ph-12">
-        <div class="sv-font-t1-14-b">JavaScript</div>
-        <div class="sv-font-t1-14 sv-mt-8">Some description</div>
-      </li>
-    </ul>
+    <ul id='task-list' class="sv-container sv-list-v1 sv-mt-8"></ul>
+
+    <div class="sv-container">
+      <button id="btnAddTask" class="sv-btn-v1 sv-mt-24 sv-w-full">New task</button>
+    </div>
   </div>
 </body>
 </html>

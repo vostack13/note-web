@@ -29,6 +29,14 @@
 
 /* === UTILS === */
 
+.sv-pt-8 {
+  padding-top: 8px;
+}
+
+.sv-pb-8 {
+  padding-bottom: 8px;
+}
+
 .sv-ph-12 {
   padding-left: 12px;
   padding-right: 12px;
@@ -41,6 +49,11 @@
 .sv-pv-16 {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.sv-ph-16 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .sv-pt-32 {
@@ -76,6 +89,12 @@
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.sv-font-t1-24-b {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
 }
 
 .sv-font-t1-14 {
@@ -130,6 +149,22 @@
   background-color: #AFB4CA;
 }
 
+.sv-font-clr-g6 {
+  color: #EFF0F4;
+}
+
+.sv-clr-g6 {
+  background-color: #EFF0F4;
+}
+
+.sv-font-clr-g7 {
+  color: #FFFFFF;
+}
+
+.sv-clr-g7 {
+  background-color: #FFFFFF;
+}
+
 /* === COMMON === */
 
 :root, body {
@@ -165,11 +200,6 @@ ul {
 }
 
 /* === COMPONENTS === */
-
-.sv-card {
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
-}
 
 .sv-btn-v1,
 .sv-btn-v2 {
@@ -214,4 +244,33 @@ ul {
 .sv-btn-v1[disabled],
 .sv-btn-v2[disabled] {
   background-color: red;
+}
+
+.sv-list-v1 {
+
+}
+
+.sv-list-v1 > .sv-list-v1-item:nth-last-of-type(n+2) {
+  position: relative;
+}
+
+.sv-list-v1 > .sv-list-v1-item:nth-of-type(1) {
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+}
+
+.sv-list-v1 > .sv-list-v1-item:nth-last-of-type(1) {
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+.sv-list-v1 > .sv-list-v1-item:nth-last-of-type(n+2):before {
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 1px;
+  background-color: #EAEBF1;
 }
